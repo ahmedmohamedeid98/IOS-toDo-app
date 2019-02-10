@@ -1,7 +1,3 @@
-//
-//  GDHeaderView.swift
-//  project_Udamy
-//
 //  Created by MacOS on 12/20/1439 AH.
 //  Copyright © 1439 AH MacOS. All rights reserved.
 //
