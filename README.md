@@ -2,8 +2,14 @@
 <ul>
     <li>ToDo App For IOS with Swift4</li>
    </ul>
-![Image](images/toDoApp1.PNG)
-<img src="toDoApp1.PNG">
+
+<p align="left">
+  <img src="images/toDoApp1.PNG" width="170" height= "300">
+  <img src="images/toDoApp2.PNG" width="170" height= "300">
+  <img src="images/toDoApp3.PNG" width="170" height= "300">
+  <img src="images/toDoApp4.PNG" width="170" height= "300">
+  <img src="images/toDoApp5.PNG" width="170" height= "300">
+</p>
 
 ## Hi everybody
 <ul>
