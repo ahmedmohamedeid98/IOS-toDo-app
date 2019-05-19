@@ -19,7 +19,7 @@
 <li>i build it be the code from scratch.</li>
 </ul>
 
-## What is the containt of this Project? 
+## What is the contents of this Project? 
 <ol>
 <li> ToDo-App Folder</li>
       <ul>
