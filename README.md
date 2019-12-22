@@ -11,13 +11,6 @@
   <img src="images/toDoApp5.PNG" width="170" height= "300">
 </p>
 
-## Hi everybody
-<ul>
-<li>my name is ahmed and this is my app <b>ToDo</b> i'm study in faculty of computers and informatics in suez canal university.</li>
-<li>fistly: this app i build it after i finish ios course from udemy.</li>
-<li>i built this <b>without using the "storybord"</b>.</li>
-<li>i build it be the code from scratch.</li>
-</ul>
 
 ## What is the contents of this Project? 
 <ol>
