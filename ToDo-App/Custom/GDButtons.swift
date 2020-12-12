@@ -29,12 +29,10 @@ class GDButtons:UIButton {
         self.backgroundColor = self.buttonColor
         self.layer.cornerRadius = self.corner
         
-        switch type {
-        case .roundText:
-            self.roudedIcon()
-        case .squareIcon:
-            self.squareIcon()
-        default: break;
+        if (type == buttonOption.roundText) {
+            return self.roudedIcon()
+        } else if (type == buttonOption.squareIcon) {
+            return self.squareIcon()
         }
     }
     

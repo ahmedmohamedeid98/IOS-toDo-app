@@ -10,8 +10,8 @@ class GDGradiant:UIView {
     ]
     /// Or
     var hexColor:[CGColor] = [
-        UIColor.init(rgb: 0x64E4FF).cgColor,
-        UIColor.init(rgb: 0x3A7BD5).cgColor
+        UIColor.init(rgb: 0x0e49b5).cgColor,
+        UIColor.init(rgb: 0x153e90).cgColor
     ]
     /// Or
     var staticColor:[CGColor] = [
@@ -24,7 +24,7 @@ class GDGradiant:UIView {
             super.init(frame: frame)
         if let layer = self.layer as? CAGradientLayer{
             self.translatesAutoresizingMaskIntoConstraints = false
-            layer.colors = [UIColor.purple.cgColor,UIColor.darkGray.cgColor]
+            layer.colors = hexColor
             layer.locations = [ 0.0 , 1.2 ]
         }
     }

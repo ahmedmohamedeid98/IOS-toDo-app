@@ -27,8 +27,8 @@ class GDCustomTableView:UITableViewCell{
     }()
     let box = GDButtonBox()
     
-    var toDo:ToDo?{
-        didSet{
+    var toDo:ToDo? {
+        didSet {
             if let toDo = toDo{
                 box.toggle = toDo.status
                 self.textField.text = toDo.title
@@ -36,7 +36,7 @@ class GDCustomTableView:UITableViewCell{
         }
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

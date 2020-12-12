@@ -55,10 +55,10 @@ class ListViewController:UIViewController , GDaddItemToList_P , GDopenAddItemPop
     var keyboardHeight:CGFloat = 290
     
     override func viewDidAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillshow(notification:)), name:NSNotification.Name.UIKeyboardDidShow, object:nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillshow(notification:)), name:UIResponder.keyboardDidShowNotification, object:nil)
     }
     @objc func keyboardWillshow(notification: Notification){
-        let keyboardsize = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardsize = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         keyboardHeight = keyboardsize.height
     }
     
@@ -181,16 +181,14 @@ extension ListViewController: UITextFieldDelegate , UITableViewDelegate , UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDCustomTableView
+        cell.contentView.isUserInteractionEnabled = false
         cell.delegate = self
         cell.textField.delegate = self
         var taskInTable:[ToDo] = []
-        self.DataList.forEach
-        { (toDo) in
-            if indexPath.section == 0 && !toDo.status
-            {
+        self.DataList.forEach { (toDo) in
+            if indexPath.section == 0 && !toDo.status {
                 taskInTable.append(toDo)
-            }else if indexPath.section == 1 && toDo.status
-            {
+            }else if indexPath.section == 1 && toDo.status {
                 taskInTable.append(toDo)
             }
         }

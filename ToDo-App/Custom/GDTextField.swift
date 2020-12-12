@@ -32,12 +32,12 @@ class GDTextField:UITextField {
 
 extension GDTextField{
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds,insets)
+        return bounds.inset(by: insets)
     }
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, insets)
+        return bounds.inset(by: insets)
     }
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, insets)
+        return bounds.inset(by: insets)
     }
 }

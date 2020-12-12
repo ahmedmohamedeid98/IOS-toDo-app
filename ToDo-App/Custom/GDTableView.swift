@@ -7,7 +7,7 @@ import UIKit
 class GDTableView:UITableView{
     
     
-    override init(frame: CGRect, style: UITableViewStyle)
+    override init(frame: CGRect, style: UITableView.Style)
     {
         super.init(frame: frame, style: style)
         if frame == .zero
@@ -16,7 +16,6 @@ class GDTableView:UITableView{
         }
         self.backgroundColor = .clear
         self.separatorStyle = .none
-        
     }
     
     
